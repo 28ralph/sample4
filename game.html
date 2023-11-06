@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "submit" onclick="win1()">click</button>
+   <h2> wins: <span class ="win">0</span> loses: <span class ="lose">0</span> ties: <span class ="tie">0</span></h2>
+</body>
+
+<script>
+    const win = document.querySelector(".win");
+    const lose = document.querySelector(".lose");
+    const tie = document.querySelector(".tie");
+
+    const score = {
+        wins: 0,
+        loses: 0,
+        ties: 0
+    };
+
+    
+
+    function win1(){
+    win.innerHTML = score.wins++;
+    }
+    win1();
+
+</script>
+</html>
